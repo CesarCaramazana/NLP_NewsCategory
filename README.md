@@ -21,3 +21,22 @@ from the HTML that spoilt the topic modeling task.
 5) Bi-grams detection: to merge words that commonly
 appear together in the data, such as ”New York”,
 ”North Korea” or ”White House”.
+
+
+## Text vectorization
+
+1) TF-IDF: The TF-IDF matrix was computed automatically using Gensim’s implementation. This method returns a very sparse representation of each document, for a vocabulary size of 21184 words.
+2) Word embeddings: We decided to train a Fast Text model with vector size 200 and window size 5 to be robust against out-of-vocabulary words. The document
+embedding V is then calculated averaging the embeddings of the words in the document weighted by their tf-idf factor. With this strategy we control the contribution of common versus uncommon words in the embedding space.
+
+3) LDA Topic representation: The LDA topic representation was carried out using Mallet [4] and in two steps. First, an exploratory phase to search for the number of topics with the highest coherence score and to inspect the resulting words per topic. This phase was iterated over several times, preprocessing the text after inspecting the outcome to obtain better coherence (mainly stopword removal, common-words filtering and bi-grams detection). Second, a re-training of the best model (n = 40) for a greater number of iterations. 
+
+
+## Machine Learning methods
+
+Classical methods.: Three classification paradigms were chosen from the Scikit-learn library to serve as the baseline of classical Machine Learning methods. These are: Support Vector Machines (SVM), Random Forest classifiers (RF) and Multilayer Perceptrons (MLP).
+• SVM: with a RBF kernel. The parameter C was crossvalidated.
+• RF: the number of trees and their depths were crossvalidated.
+• MLP: with 3 hidden layers of sizes 128, 256 and 128. The Adam algorithm was used to optimize the weights.
+
+
