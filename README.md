@@ -46,6 +46,9 @@ Regarding the Transformer architecture, a pretrained DistilBERT model [6] was fi
 
 
 
+## Results
+
+In the following table, a summary of the results is shown:
 
 
 
