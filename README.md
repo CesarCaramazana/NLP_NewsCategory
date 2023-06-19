@@ -50,7 +50,7 @@ Regarding the Transformer architecture, a pretrained DistilBERT model [6] was fi
 
 In the following table, a summary of the results is shown:
 
-
+![Results](https://github.com/CesarCaramazana/NLP_NewsCategory/blob/main/Figures/results.PNG)
 
 ## Summary of the discussion
 
