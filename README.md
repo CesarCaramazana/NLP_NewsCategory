@@ -44,3 +44,14 @@ Three classification paradigms were chosen from the Scikit-learn library to serv
 ### Transformer
 Regarding the Transformer architecture, a pretrained DistilBERT model [6] was fine-tuned for 5 epochs. Some minor tweaks had to be done to accommodate for our multi-label classification task. The appropriate data preprocessing was also carried out to fit the required format of the model (such as one-hot encoding the labels and tokenizing the inputs).
 
+
+
+
+
+
+## Summary of the discussion
+
+Out of all the classical Machine Learning models, the Random Forest classifiers provided the worst performance overall, particularly for the TF-IDF input, due to the lack of expressiveness. The Support Vector Machines and the MLPs yielded similar results, and scored a bit lower than the DistilBERT fine-tuned Transformer, with which the best test accuracy of 0.829 was achieved. We analyzed the short-comings of each vector representation, such as the large dimensionality of the TF-IDF input matrix or the need to set beforehand the number of topics for the LDA model. A comparison of the computational cost was carried out in terms of average inference time: the Transformer was the most costly method due to the complexity of the architecture while the classical ML classifiers were much more light-weighted. We discovered that many errors in the classification are related to the ambiguity and the class imbalance of the data. Finally, we found out that the Machine Learning method had a greater impact in performance than the text vectorization technique, although it is the latter that influenced the most on the computational cost of the inference process, as the input dimensionality is very heterogeneous for the different representations.
+
+Some possible lines of improvement involve: the crossvalidation of the number of topics in LDA as a hyperparamenter of the classification pipeline, a finer search of the threshold for the detection of N-grams or the deepening in other Transformer architectures, as they outperform the classical approaches we took in this project.
+
