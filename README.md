@@ -34,9 +34,13 @@ embedding V is then calculated averaging the embeddings of the words in the docu
 
 ## Machine Learning methods
 
-Classical methods.: Three classification paradigms were chosen from the Scikit-learn library to serve as the baseline of classical Machine Learning methods. These are: Support Vector Machines (SVM), Random Forest classifiers (RF) and Multilayer Perceptrons (MLP).
-• SVM: with a RBF kernel. The parameter C was crossvalidated.
-• RF: the number of trees and their depths were crossvalidated.
-• MLP: with 3 hidden layers of sizes 128, 256 and 128. The Adam algorithm was used to optimize the weights.
+### Classical methods
+Three classification paradigms were chosen from the Scikit-learn library to serve as the baseline of classical Machine Learning methods. These are: Support Vector Machines (SVM), Random Forest classifiers (RF) and Multilayer Perceptrons (MLP).
+- SVM: with a RBF kernel. The parameter C was crossvalidated.
+- RF: the number of trees and their depths were crossvalidated.
+- MLP: with 3 hidden layers of sizes 128, 256 and 128. The Adam algorithm was used to optimize the weights.
 
+
+### Transformer
+Regarding the Transformer architecture, a pretrained DistilBERT model [6] was fine-tuned for 5 epochs. Some minor tweaks had to be done to accommodate for our multi-label classification task. The appropriate data preprocessing was also carried out to fit the required format of the model (such as one-hot encoding the labels and tokenizing the inputs).
 
