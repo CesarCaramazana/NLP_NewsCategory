@@ -52,6 +52,10 @@ Regarding the Transformer architecture, a pretrained DistilBERT model [6] was fi
 
 ## Results
 
+EVALUATION METRICS
+In order to obtain statistically significant results, the dataset was divided into a train and a test set, in a 65/35 proportion, that is, 10724 and 5775 samples respectively. The split was stratified to maintain the same proportion of classes. For the Transformer, the train was further divided into train and validation.
+The performance of the models is evaluated in terms of accuracy. For a better disclosure of signs of overfitting, it is calculated over both the training and the test sets. In some key cases, the confusion matrix is also reported. We also compute the average inference time (in seconds per sample), to further analyze the computational cost of each approach.
+
 In the following table, a summary of the results is shown:
 
 ![Results](https://github.com/CesarCaramazana/NLP_NewsCategory/blob/main/Figures/results.PNG)
