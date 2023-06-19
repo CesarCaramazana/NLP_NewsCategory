@@ -22,6 +22,10 @@ from the HTML that spoilt the topic modeling task.
 appear together in the data, such as ”New York”,
 ”North Korea” or ”White House”.
 
+The pieces of news belong to one of the four classes: WORLD NEWS, ENTERTAINMENT, POLITICS or OTHER, distributed as shown in the following figure.
+
+![classes](https://github.com/CesarCaramazana/NLP_NewsCategory/blob/main/Figures/classes.PNG)
+
 
 ## Text vectorization
 
