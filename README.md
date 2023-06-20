@@ -33,7 +33,7 @@ The pieces of news belong to one of the four classes: WORLD NEWS, ENTERTAINMENT,
 2) Word embeddings: We decided to train a Fast Text model with vector size 200 and window size 5 to be robust against out-of-vocabulary words. The document
 embedding V is then calculated averaging the embeddings of the words in the document weighted by their tf-idf factor. With this strategy we control the contribution of common versus uncommon words in the embedding space.
 
-3) LDA Topic representation: The LDA topic representation was carried out using Mallet [4] and in two steps. First, an exploratory phase to search for the number of topics with the highest coherence score and to inspect the resulting words per topic. This phase was iterated over several times, preprocessing the text after inspecting the outcome to obtain better coherence (mainly stopword removal, common-words filtering and bi-grams detection). Second, a re-training of the best model (n = 40) for a greater number of iterations. 
+3) LDA Topic representation: The LDA topic representation was carried out using Mallet and in two steps. First, an exploratory phase to search for the number of topics with the highest coherence score and to inspect the resulting words per topic. This phase was iterated over several times, preprocessing the text after inspecting the outcome to obtain better coherence (mainly stopword removal, common-words filtering and bi-grams detection). Second, a re-training of the best model (n = 40) for a greater number of iterations. 
 
 
 ## Machine Learning methods
