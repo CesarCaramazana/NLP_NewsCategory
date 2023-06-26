@@ -7,7 +7,7 @@ In this final project of Natural Language Processing we will be carrying a super
 
 ## The dataset
 
-The source of the data is the News Category Dataset, a public dataset containing 210000 news headlines from 2012 to 2018 from the digital newspaper HuffPost, as well as a brief description, the author, the URL, the date and the label on the category of the piece of news. All the text is written in English. We generated our final set as a subpartition of 16500 samples with the body of the articles retrieved from the original webpage. Each sample was processed with the following steps:
+The source of the data is the [News Category Dataset](https://www.kaggle.com/datasets/rmisra/news-category-dataset), a public dataset containing 210000 news headlines from 2012 to 2018 from the digital newspaper HuffPost, as well as a brief description, the author, the URL, the date and the label on the category of the piece of news. All the text is written in English. We generated our final set as a subpartition of 16500 samples with the body of the articles retrieved from the original webpage. Each sample was processed with the following steps:
 1) Valid Part-of-Speech (nouns, verbs, pronouns and adjectives)
 and alpha-numeric filtering.
 2) Generic stopword removal.
