@@ -2,7 +2,7 @@
 
 
 
-In this final project of Natural Language Processing we will be carrying a supervised classification task over a News dataset after applying three different text vectorization techniques –TF-IDF, Word Embeddings (W2V) and LDA Topic representation– and comparing the performance of classical Machine Learning methods versus a fine-tuned Transformer from the Hugging Face library.
+In this final project of Natural Language Processing we will be carrying a supervised classification task over a [News dataset](https://www.kaggle.com/datasets/rmisra/news-category-dataset) after applying three different text vectorization techniques –TF-IDF, Word Embeddings (W2V) and LDA Topic representation– and comparing the performance of classical Machine Learning methods versus a fine-tuned Transformer from the Hugging Face library.
 
 
 ## The dataset
@@ -67,3 +67,12 @@ Out of all the classical Machine Learning models, the Random Forest classifiers 
 
 Some possible lines of improvement involve: the crossvalidation of the number of topics in LDA as a hyperparamenter of the classification pipeline, a finer search of the threshold for the detection of N-grams or the deepening in other Transformer architectures, as they outperform the classical approaches we took in this project.
 
+## References
+
+[1] Misra, Rishabh. "News Category Dataset." arXiv preprint arXiv:2209.11429 (2022).
+[2] Misra, Rishabh and Jigyasa Grover. "Sculpting Data for ML: The first act of Machine Learning." ISBN 9798585463570 (2021).
+[3] Piotr Bojanowski et al. “Enriching Word Vectors with Subword Information”. In: Transactions of the Associ- ation for Computational Linguistics 5 (2017), pp. 135–146. ISSN: 2307-387X.
+[4] Andrew Kachites McCallum. “MALLET: A Machine Learning for Language Toolkit”. http://mallet.cs.umass.edu. 2002.
+[5] Carson Sievert and Kenneth Shirley. “LDAvis: A method for visualizing and interpreting topics”. In: Proceedings of the workshop on interactive language learning, visualization, and interfaces. 2014, pp. 63–70.
+[6] Victor Sanh et al. “DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter”. In: ArXiv abs/1910.01108 (2019).
+Huffpost. URL: https://www.huffpost.com/.
